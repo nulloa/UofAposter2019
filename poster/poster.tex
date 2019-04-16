@@ -41,7 +41,7 @@
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{Bayesian Functional Data Analysis and Influenza} % Poster title
+\title{Bayesian Functional Data Analysis in Influenza Forecasting} % Poster title
 
 \author{Nehemias Ulloa, Jarad Niemi} % Author(s)
 
@@ -128,7 +128,7 @@ Possible basis are: \\
 \begin{itemize}
 \item Polynomial basis
 \item Fourier basis
-\item Principal componant basis \\
+\item Principal component basis \\
 \end{itemize}
 
 \vspace{10mm}
@@ -137,9 +137,9 @@ Possible basis are: \\
 
 The FPCA method (Dauxois and Pousse (1976)) is represented like this:
 \begin{equation}
-  \theta_{r,s} (w) = \sum_{k=1}^{K} \beta_{r,s,k} \phi_k (w)
+  \theta_{r,s} (w) = \sum_{k=1}^{K} \beta_{r,s,k} \hat{\phi}_k (w)
 \end{equation}
-where $\phi_k (w)$ are the principal componant basis
+where $\hat{\phi}_k (w)$ are the estimated principal component basis
 
 \vspace{10mm}
 
@@ -245,7 +245,7 @@ y &\sim N(X\beta, \sigma^2 I) \nonumber \\
 \begin{itemize}
   \item How well do they model the influenza season?
   \item Do the shrinkage priors naturally choose the number of basis functions?
-  \item Can it forecast a new season?
+  \item How well are the forecasts of a new season?
 \end{itemize}
 
 \end{alertblock} 
