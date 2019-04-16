@@ -119,14 +119,14 @@ y_{r,s}(w) - \hat{\mu}(w) &= \theta_{r,s}(w) + \epsilon_{r,s}(w) \\
 \epsilon_{r,s}(w) &\overset{ind}{\sim} N(0,\sigma^2_{\epsilon}) \nonumber
 \end{align}
 
-\vspace{10mm}
+% \vspace{10mm}
 
 \textbf{Basis Choices} \\
 
 Possible basis are: \\
 
 \begin{itemize}
-\item Polynomial bases
+\item Polynomial basis
 \item Fourier basis
 \item Principal componant basis \\
 \end{itemize}
@@ -139,8 +139,9 @@ The FPCA method (Dauxois and Pousse (1976)) is represented like this:
 \begin{equation}
   \theta_{r,s} (w) = \sum_{k=1}^{K} \beta_{r,s,k} \phi_k (w)
 \end{equation}
+where $\phi_k (w)$ are the principal componant basis
 
-
+\vspace{10mm}
 
 \textbf{15-16 Influenza Season}
 
@@ -242,7 +243,7 @@ y &\sim N(X\beta, \sigma^2 I) \nonumber \\
 \begin{alertblock}{Questions of Interest}
 
 \begin{itemize}
-  \item Does these methods work to model the influenza season?
+  \item How well do they model the influenza season?
   \item Do the shrinkage priors naturally choose the number of basis functions?
   \item Can it forecast a new season?
 \end{itemize}
@@ -329,7 +330,7 @@ y &\sim N(X\beta, \sigma^2 I) \nonumber \\
 \begin{block}{Forecasting}
 \begin{figure}
 \includegraphics[width=\linewidth]{../../thesis/Chapter2/figures_tables/fc10.png}
-\caption{This plot shows the $\beta$ estimates for the forecasted season across all regions.}
+\caption{This plot shows the season forecasts for the HSt model from 10 weeks into the new season. They all capture the timinig of the peak fairly well.}
 \end{figure}
 \end{block}
 
